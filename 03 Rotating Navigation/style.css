@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+   font-family:'Roboto', sans-serif;
+   display:flex;
+   margin:0;
+   flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow-x :hidden;
+}
+#bg{
+    height: 150vh;
+    width: 100vw;
+    transition: 1000ms;
+    background-color: white;
+    transform-origin: top left;
+}
+.rotate10{
+    transform: rotate(-20deg);
+}
+.view{
+height: 100vh;
+width: 100vw;
+justify-content: start;
+position: relative;
+background-color: rgb(76, 76, 76);
+}
+nav{
+    position: absolute;
+    bottom: 100px;
+    left: -100px;
+    transform-origin: top right;
+    display: flex;
+    flex-direction: column;
+    transition: 1000ms;
+}
+.translate{
+    left: 10px;
+}
+#navOpener{
+    background-color: red;
+    border-radius: 100%;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left:-150px;
+    top:-150px;
+    transition: 1000ms;
+}
+    .rotate90{
+    transform: rotate(-90deg);
+}
+
+#openNav{
+    position: absolute;
+    left: 200px;
+
+    top: 200px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 0;
+}
+#closeNav{
+
+    position: absolute;
+    left: 60px;
+    transform: rotate(90deg);
+    margin: 0;
+
+    top: 200px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+p{  
+    margin: 200px;
+}
+button{
+    background-color: transparent;
+    border-style: none;
+    color: white;
+    font-size: xx-large;
+    margin: 20px;
+}
