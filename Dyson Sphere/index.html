@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dyson Sphere Program</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="userInput" class="hover-box">
+
+        <article id="recipeInfo" class="info">
+
+
+    <label >Largest input
+        <select name="lInput" id="lInput">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+        </select> 
+    </label>
+
+    <label >Largest output
+        <select name="lOutput" id="lOutput">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+        </select> 
+    </label>
+    
+    <label >Craft time
+        <select name="craftTime" id="craftTime">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+        </select> 
+    </label>
+        </article>
+
+        <article id="infrastructureInfo" class="info">
+
+    <label >Belt Speed
+        <select name="beltSpeed" id="beltSpeed">
+            <option value="30">30</option>
+            <option value="6">6</option>
+            <option value="12">12</option>
+        </select> 
+    </label>
+
+    <label >Proliferat    
+        <select name="proliferat" id="proliferat">
+            <option value="1.25">1.25</option>
+            <option value="1">1</option>
+        </select> 
+    </label>
+    <label >Crafter
+        <select name="crafters" id="crafters">
+            <option value="1.5">1.5</option>
+            <option value="1">1</option>
+            <option value="0.75">0.75</option>
+        </select> 
+       </label>
+        </article>
+
+    </section>
+
+    <section id="results">
+
+        <label >Number of crafters 
+            <ul>
+                <li class="white" >One input, one output: <span id="numCraftersOneOne">0</span> Prod: <span id="oneOneProd">0</span></li>
+                <li class="white">Two input, one output: <span id="numCraftersTwoOne">0</span>Prod: <span id="twoOneProd">0</span></li>
+                 
+                <li class="white">One input, Two output: <span id="numCraftersOneTwo">0</span>Prod: <span id="oneTwoProd">0</span></li>
+            </ul>            
+
+        <button id="calc" onclick="calcNumOfCrafters()">calculate</button>
+    </section>
+<script src="script.js"></script>
+</body>
+</html>

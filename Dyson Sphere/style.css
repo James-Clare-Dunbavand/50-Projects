@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+   font-family:'Roboto', sans-serif;
+   display:flex;
+   margin:0;
+   flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow:hidden;
+    background-color: black;
+    gap: 40px;
+    color:white;
+}
+
+
+.constrainte{
+    color: green;
+}
+
+#userInput{
+    height:30vh;
+    width: 80vw;
+    display:flex;
+    border-radius:10px;
+
+    align-content: space-evenly;
+    gap: 10px;
+    background-color: #111319;
+    box-shadow: 0 0 2px 0.2px rgba(255, 255, 255, 0.5);
+    background-image:#111319;
+    transition:background 10s ease;
+}
+#recipeInfo{
+}
+#infrastructureInfo{
+}
+.info{
+
+    background-color:#17191d;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    display:flex;
+    flex-direction: column;
+    flex:1;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    box-shadow: 0 0 2px 0.2px rgba(255, 255, 255, 0.5);
+    
+}
+.hover-box{
+    transition:background 2s;
+}
+
+#userInput label{
+
+    text-align: center;
+    flex-grow:1;
+    background-color:#1c2026;
+    border-radius:10px;
+    margin: 5px;
+    font-size:130%;
+    box-shadow: 0 0 2px 0.2px rgba(255, 255, 255, 0.5);
+    display:flex;
+    justify-content:space-between;
+    padding:15px;
+
+}
+#results{
+
+    height:30vh;
+    width: 80vw;
+    display:flex;
+    border-radius:10px;
+
+    align-content: space-evenly;
+    gap: 10px;
+    background-color: #111319;
+    justify-content: center;
+    box-shadow: 0 0 2px 0.2px rgba(255, 255, 255, 0.5);
+}
+select{
+    color:white;
+    background-color:#17191d;
+    border-radius: 20px;
+    padding:9px;
+    width:25%;
+    border-style:none;
+    box-shadow: 0 0 2px 0.2px rgba(255, 255, 255, 0.5);
+    text-align: right;
+}
+select:focus{
+outline:none;
+
+}
+select:open{
+    box-shadow: 0 0 5px 0.2px rgba(255, 255, 255, 1);
+    background-color: #1c2026;
+
+}
+#results label{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    background-color: #1c2026 ;
+    border-radius: 10px;
+    padding:20px;
+    margin:20px;
+    box-shadow: 0 0 2px 0.2px rgba(255, 255, 255, 0.5);
+}
+li{
+    padding: 5px;
+    font-size: larger;
+}
+/* .white{
+    color: #ffffff;
+    padding:10px;
+    font-size:xx-large;
+} */
