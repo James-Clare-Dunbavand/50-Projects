@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--transitionSpeed: 1000ms;
+	--left-bg-color: rgba(43, 43, 43, 0.8);
+	--right-bg-color: rgba(87, 84, 236, 0.7);
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	margin: 0;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	overflow: hidden;
+}
+
+#pages {
+
+	height: 100%;
+	width: 100%;
+}
+
+.page {
+	height: 100%;
+	width: 50%;
+	transition: ease-in 800ms 500ms;
+	overflow: hidden;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.page button {
+
+	background-color: transparent;
+	border: 5px solid white;
+	padding: 0 2rem 0 2rem;
+	font-size: 1rem;
+	z-index: 99;
+
+}
+
+.page button:hover {
+
+	background-color: rgba(0, 0, 0, 1);
+
+}
+
+.page button:active {
+
+	background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.page button p {
+	font-size: 1.5rem;
+	color: white;
+}
+
+.left-page::before {
+
+	content: '';
+	position: absolute;
+	background-color: var(--left-bg-color);
+	width: 100%;
+	height: 100%;
+}
+
+.right-page::before {
+	content: '';
+
+	position: absolute;
+	background-color: var(--right-bg-color);
+	width: 100%;
+	height: 100%;
+}
+
+.page.left-page {
+
+	background: url("xbox.jpg");
+	left: 0;
+	background-size: cover;
+
+
+}
+
+.page.right-page {
+	background: url("ps5.jpg");
+	background-position-x: right;
+	right: 0;
+	background-size: cover;
+}
+
+
+.un-hovered {
+	width: 25%;
+}
+
+.hovered {
+	width: 75%;
+}
