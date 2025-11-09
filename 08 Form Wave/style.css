@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	margin: 0;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	overflow: hidden;
+	background-color: skyblue;
+}
+
+.form {
+	background-color: steelblue;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-content: space-between;
+	flex-direction: column;
+	padding: 4rem;
+	color: white;
+	height: 50vh;
+	box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
+
+}
+
+h1 {
+	text-align: center;
+	margin: auto 0;
+}
+
+.input {
+	background-color: steelblue;
+	border-width: 0 0 1px 0;
+	border-color: skyblue;
+	border-style: solid;
+	font-size: 1rem;
+	color: white;
+}
+
+.input::placeholder {
+	color: white;
+}
+
+.login-button {
+	margin: auto 0;
+	background-color: skyblue;
+	color: white;
+	font-size: 1.2rem;
+	border-style: none;
+	border-radius: 10px;
+	padding: 0.8rem;
+	box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.input:focus {
+	outline: none;
+
+}
+
+.login-button:hover {
+	background-color: rgb(60, 120, 170);
+}
+
+.login-button:active {
+	background-color: royalblue;
+	box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5) inset;
+
+}
+
+p {
+
+	margin: auto 0;
+	pointer-events: none;
+}
+
+span {
+	transition-duration: 1000ms;
+	position: relative;
+	top: 0;
+}
+
+div {
+	position: relative;
+	margin: auto 0;
+}
+
+#email-title {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#password-title {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+
+.elevated {
+	top: -1rem;
+	position: relative;
+	transition-duration: 1000ms;
+}
